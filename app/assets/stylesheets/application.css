@@ -1,0 +1,122 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ /* html, body */
+::-webkit-scrollbar                      { display: none; } 
+button:focus                             { outline:0; }
+html, body                               { margin: 0 auto; height: 100%; width: 100%; overflow: auto; max-width: 100%; overflow-x: hidden; }
+
+body { background: linear-gradient(90deg, #00ffff 0%, #bdff58 45%,#e3ff00 60%, #ebff4c 80%, #f0ff00 100%); }
+
+
+/* Marvel Logo */
+@font-face 
+{
+  font-family: Marvel;
+  src: url(Marvel.ttf);
+  /* Avengeance Font Credit: Created in 2012 by the Fontry */
+}
+
+.MARVEL-AVENGERS-ENDGAME { margin: auto; position: absolute;   top: 3%; bottom: 0%; left: 0%; right: 0%;
+          animation:float 7s infinite; 
+  -webkit-animation:float 7s infinite;
+  align-items: center; 
+  text-align: center;
+  justify-content: center;
+}
+
+
+		    @keyframes float { 50%{        transform: translateY(30px); } }
+@-webkit-keyframes float { 50%{-webkit-transform: translateY(30px); } }
+
+
+
+
+
+
+
+
+
+/* Infinity Stones Credit: https://www.freepik.com/free-vector/pack-six-colored-gemstones_1093484.htm  */
+.size1 {width:100px; height:100px;      margin: auto; position: absolute; top:-30%; bottom: 0%; left: -50%; right: 0%;  animation:float 7s infinite; -webkit-animation:float 5s infinite; }
+.size2 {width:100px; height:100px;      margin: auto; position: absolute; top:-30%; bottom: 0%; left: -30%; right: 0%;  animation:float 7s infinite; -webkit-animation:float 5.5s infinite; }
+.size3 {width:100px; height:100px;      margin: auto; position: absolute; top:-30%; bottom: 0%; left: -10%; right: 0%;  animation:float 7s infinite; -webkit-animation:float 6s infinite; }
+.size4 {width:100px; height:100px;      margin: auto; position: absolute; top:-30%; bottom: 0%; left: 10%;  right: 0%;  animation:float 7s infinite; -webkit-animation:float 6.5s infinite; }
+.size5 {width:100px; height:100px;      margin: auto; position: absolute; top:-30%; bottom: 0%; left: 30%;  right: 0%;  animation:float 7s infinite; -webkit-animation:float 7s infinite; }
+.size6 {width:100px; height:100px;      margin: auto; position: absolute; top:-30%; bottom: 0%; left: 50%;  right: 0%;  animation:float 7s infinite; -webkit-animation:float 7.5s infinite; }
+
+
+
+/* Avengers Credit: http://cheechingy.com/2012/04/marvels-avengers */
+/* original color Darker */
+.color1{background: #5BF1A7; top: 10%; bottom: 0%; left: 0%; right: 55%;}
+.color2{background: #83EE77; top: 10%; bottom: 0%; left: 0%; right: 33%;}
+.color3{background: #ACF351; top: 10%; bottom: 0%; left: 0%; right: 11%;}
+.color4{background: #C6F525; top: 10%; bottom: 0%; left: 0%; right: -11%;}
+.color5{background: #ECF219; top: 10%; bottom: 0%; left: 0%; right: -33%;}
+.color6{background: #F4F52A; top: 10%; bottom: 0%; left: 0%; right: -55%;}
+
+.color1, .color2, .color3, .color4, .color5, .color6
+{
+  margin: auto; position: absolute;
+
+  align-items: center; 
+  text-align: center;
+  justify-content: center; 
+  text-decoration: none;
+  cursor: pointer;
+  border: solid 5px transparent; 
+  border-radius: 50%; 
+  padding: 0px 0px 0px 0px;
+  color: white; font-family: Arial;   
+  height: 100px; width: 100px;  
+  transition: width 1s, height 1s, background-color 1s ease; 
+}
+
+/* hover color Lighter */
+.color1:hover { cursor: pointer; height: 140px; width: 140px;  background-color: #76FFBB; }
+.color2:hover { cursor: pointer; height: 140px; width: 140px;  background-color: #8AFFA4; }
+.color3:hover { cursor: pointer; height: 140px; width: 140px;  background-color: #B9FF60; }
+.color4:hover { cursor: pointer; height: 140px; width: 140px;  background-color: #D2FF38; }
+.color5:hover { cursor: pointer; height: 140px; width: 140px;  background-color: #E5FF28; }
+.color6:hover { cursor: pointer; height: 140px; width: 140px;  background-color: #FEFF32; }
+
+
+
+
+
+.START-THE-BATTLE
+{
+  cursor: pointer;
+  color: white;
+  background-color: #deffab;
+  font-family: 'Marvel';
+  font-size: 23px;
+  border: 4px solid white;
+  border-radius: 0%;
+  padding:20px 0px 20px 0px;
+  height:18px; width: 190px; 
+  margin: auto; position: absolute; 
+  top: 50%; bottom: 0%; left: 0%; right: 0%;
+  align-items: center; 
+  text-align: center;
+  justify-content: center; 
+  text-decoration: none;
+
+  transition: all .25s ease-in-out;
+}
+.START-THE-BATTLE:hover {transform: 	scale(1.1,1.1);} 
